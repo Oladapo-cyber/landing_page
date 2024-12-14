@@ -163,6 +163,24 @@ nav img {
   border-radius: 5px;
 }
 
+footer {
+  background-color: #000;
+  color: #fff;
+  font-size: larger;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 5px;
+  gap: 10px;
+  height: 20vh;
+}
+
+footer a {
+  color: #fff;
+  text-decoration: none;
+}
+
 @media (max-width: 428px) {
   body {
     background-color: #e0c5c5;
@@ -225,9 +243,21 @@ nav img {
   }
 }
 
-@media (max-width: 950px) {
+@media (min-width: 481px) and (max-width: 949px) {
   .grid-container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+  }
+
+  .center-text {
+    margin-left: 0;
+  }
+
+  .left h1 {
+    margin-left: 0;
+  }
+
+  .left p {
+    margin: 0 2%;
   }
 }
