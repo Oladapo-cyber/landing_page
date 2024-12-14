@@ -38,7 +38,7 @@ nav img {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 80vh;
+  height: 90vh;
   background-image: url("./images/pexels-boot.jpg");
   background-size: cover;
   color: wheat;
@@ -211,7 +211,7 @@ nav img {
 
   .landing button {
     width: 50%;
-    border: 0.5px solid white;
+    border: 0.5px solid #878787;
     margin-top: 20px;
   }
 
@@ -222,5 +222,12 @@ nav img {
   .grid-container {
     display: grid;
     grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 950px) {
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
   }
 }
